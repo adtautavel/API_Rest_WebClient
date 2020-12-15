@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Reflection;
+using WebClient_APIRest141220;
 
 namespace WebClient_APIRestç141220
 {
@@ -15,25 +17,34 @@ namespace WebClient_APIRestç141220
             // Une application console qui récupère des informations sur une planète identifiée par son identifiant numérique (exemple https://swapi.dev/api/planets/1)
 
 
-          /*  string response = client.DownloadString(" https://swapi.dev/api/planets/2/");
-            Console.WriteLine(response);*/
+            /*  string response = client.DownloadString(" https://swapi.dev/api/planets/2/");
+              Console.WriteLine(response);*/
 
-            
-                        string swapiAdressPlanet2 = "https://swapi.dev/api/planets/2/";
-                        //client.BaseAddress = swapiAdressPlanet2;
-                        string response = client.DownloadString(swapiAdressPlanet2);
+
+            Console.Write("Choose a planet id, a number please ? : ");
+            string id = Console.ReadLine();
+            Console.WriteLine();
+
+            string swapiAdressPlanet2 = $"https://swapi.dev/api/planets/{id}/";
+            //client.BaseAddress = swapiAdressPlanet2;
+            string response = client.DownloadString(swapiAdressPlanet2);
                         
                         
-                        Dictionary < string, string> dicoSwapiPlanet = JsonConvert.DeserializeObject<Dictionary<string, string>>(response);
-                        //Warning : l'objet JSON a des champs qui sont des string ou string[] -> erreur
+            Planet planet = JsonConvert.DeserializeObject<Planet>(response);
+            //Warning : l'objet JSON a des champs qui sont des string ou string[] -> erreur
 
-                        foreach (string field in dicoSwapiPlanet.Keys)
-                        {
-                            Console.WriteLine("Field : " + field);
-                            Console.WriteLine("Value : " + dicoSwapiPlanet[field]);
-                            Console.WriteLine();
-                        }
-                        Console.WriteLine(response);
+                      
+            Console.WriteLine("Name : " + planet.Name);
+            Console.WriteLine("Rotation_period : " + planet.Rotation_period);
+            Console.WriteLine("Diameter : " + planet.Diameter);
+            Console.WriteLine("Climate : " + planet.Climate);
+            Console.WriteLine("Residents : " + planet.Residents[0]);
+            Console.WriteLine("Films : " + planet.Films[0]);
+            Console.WriteLine("Created : " + planet.Created);
+            Console.WriteLine("Url : " + planet.Url);
+
+
+
 
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gKAZhG5pBg3v2ay8qwNJSkLavevxMuAkCFSQB7opJ8T1757bFPosS7XOtpS92/uLc3hxIQlXtUKS1gQ+RQobTQ==",
+  "dgSpecHash": "wCkDwS+aGTt7um2qmv6Q+WI2JbrmIG7RhPHJGZo6fy8YFA/5m/l0ezkTIORD4zco4CHyutYd8xXnhuvFvJECDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRestç141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
+  "projectFilePath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRest141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adtau\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

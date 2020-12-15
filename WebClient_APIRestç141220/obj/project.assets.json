@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRestç141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
+      "projectUniqueName": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRest141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
       "projectName": "WebClient_APIRest141220",
-      "projectPath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRestç141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
+      "projectPath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRest141220\\WebClient_APIRestç141220\\WebClient_APIRest141220.csproj",
       "packagesPath": "C:\\Users\\adtau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRestç141220\\WebClient_APIRestç141220\\obj\\",
+      "outputPath": "C:\\Users\\adtau\\source\\repos\\WebClient_APIRest141220\\WebClient_APIRestç141220\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adtau\\AppData\\Roaming\\NuGet\\NuGet.Config",
